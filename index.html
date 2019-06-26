@@ -33,9 +33,9 @@ function nextImage() {
     // 3 because images are counted from 0 
     // if it's less than 4 images show the next image else reset the indexes
     if ( index < 3 ) {
-        document.getElementsByTagName("p")[clicks].classList.remove("display");
+        document.getElementsByTagName("p")[index].classList.remove("display");
         index++;
-        document.getElementsByTagName("p")[clicks].classList.add("display");
+        document.getElementsByTagName("p")[index].classList.add("display");
     } else {
         document.getElementsByTagName("p")[0].classList.add("display");
         document.getElementsByTagName("p")[3].classList.remove("display");
